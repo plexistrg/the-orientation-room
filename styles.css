@@ -60,6 +60,7 @@ h1 { max-width: 980px; font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1; }
 h2 { font-size: clamp(2rem, 4vw, 3.5rem); }
 h3 { font-size: clamp(1.25rem, 2vw, 1.6rem); }
 .lead { max-width: 790px; margin-top: 26px; font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: #374151; }
+.supporting-line { max-width: 760px; margin-top: 14px; color: var(--ink-soft); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 13px 20px; border: 1px solid var(--line); border-radius: 999px; font-weight: 700; }
 .button.primary { background: var(--ink); color: var(--paper-soft); border-color: var(--ink); }
@@ -94,6 +95,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.6rem); }
 .room-note { padding: clamp(24px, 5vw, 52px); border-left: 1px solid var(--line); }
 
 .offer-card { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr); gap: 24px; padding: clamp(24px, 4vw, 44px); }
+.offer-meta { margin: 10px 0 18px; color: var(--gold); font-weight: 800; }
 .offer-main ul { padding-left: 1.2rem; color: var(--ink-soft); }
 .offer-main li + li { margin-top: 8px; }
 .price-box { padding: 24px; border-radius: 20px; background: var(--ink); color: var(--paper-soft); align-self: stretch; }
