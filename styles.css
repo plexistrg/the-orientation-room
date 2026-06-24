@@ -102,6 +102,9 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.6rem); }
 .person-card { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(24px, 5vw, 56px); align-items: center; padding: clamp(24px, 5vw, 52px); }
 .person-marker { display: grid; place-items: center; width: 112px; height: 112px; border-radius: 50%; background: var(--gold-soft); color: var(--gold); font-family: Georgia, serif; font-size: 3rem; }
 .signature { margin-top: 22px; font-weight: 800; color: var(--ink); }
+.founder-card { align-items: start; }
+.founder-card .person-marker { margin-top: 6px; font-size: 2.2rem; }
+.room-note { padding: clamp(24px, 5vw, 52px); border-left: 1px solid var(--line); }
 
 .offer-card { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr); gap: 24px; padding: clamp(24px, 4vw, 44px); }
 .offer-main ul { padding-left: 1.2rem; color: var(--ink-soft); }
@@ -126,7 +129,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.6rem); }
 .footer p { margin: 0; color: var(--muted); font-size: .85rem; }
 .footer p + p { margin-top: 10px; }
 .footer a { text-decoration: underline; text-underline-offset: 3px; }
-.legal-note { max-width: 920px; }
+.legal-note, .tool-note { max-width: 920px; }
 
 @media (max-width: 920px) {
   .nav { display: none; }
