@@ -164,3 +164,31 @@ h3 { font-size: clamp(22px, 2.2vw, 28px); }
   .hero-card, .person-card, .offer-card { border-radius: 22px; }
   .footer { flex-direction: column; }
 }
+
+.lead-note {
+  margin: 18px 0 0;
+  max-width: 720px;
+  font-size: clamp(18px, 1.8vw, 22px);
+  color: var(--ink);
+  font-weight: 750;
+}
+
+.final-cta p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 0 auto 26px;
+  color: #4e5869;
+  font-size: 19px;
+}
+
+.boundary-note {
+  padding: 26px clamp(20px, 5vw, 72px);
+  border-top: 1px solid var(--line);
+  background: rgba(255,250,240,.46);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.boundary-note p {
+  max-width: 1040px;
+  margin: 0 auto;
+}
