@@ -165,7 +165,7 @@ h3 { font-size: clamp(1.35rem, 1.8vw, 1.6rem); }
 .booking-form .button { margin-top: 18px; cursor: pointer; }
 .question-line { margin-top: 18px !important; font-size: .95rem; }
 .question-line a { text-decoration: underline; text-underline-offset: 3px; }
-.privacy-notice { margin-top: 18px !important; color: var(--muted); font-size: .84rem; line-height: 1.55; text-align: left; }
+.privacy-notice { margin-top: 14px !important; color: color-mix(in srgb, var(--muted) 82%, transparent); font-size: .76rem; line-height: 1.45; text-align: left; }
 .privacy-notice a { text-decoration: underline; text-underline-offset: 3px; }
 
 .footer { padding: 26px 0 32px; border-top: 1px solid var(--line); background: rgba(251, 248, 242, .56); }
