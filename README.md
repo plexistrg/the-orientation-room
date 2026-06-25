@@ -10,12 +10,6 @@ Static one-page website package for the first infrastructure build.
 - `field-map-template.md` — skeleton for the client-facing Orientation Map
 - `codex-prompt.md` — prompt to paste into Codex for continuing the build
 
-## Replace placeholders
-Search inside `index.html` and replace:
-- `YOUR_BOOKING_LINK_HERE`
-- `YOUR_PAYMENT_OR_BOOKING_LINK_HERE`
-- `hello@theorientationroom.example`
-
 ## Suggested v0 stack
 - Domain: your chosen domain provider
 - Website: Carrd, static hosting, Netlify, Vercel, or GitHub Pages
