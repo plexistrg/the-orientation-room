@@ -20,7 +20,7 @@
       <a href="#offer">Angebot</a>
       <a href="#sascha">Sascha</a>
       <a href="#process">Ablauf</a>
-      <a class="nav-cta" href="mailto:saschiz@yahoo.de?subject=Termin%20Orientation%20Room">Termin buchen</a>
+      <a class="nav-cta" href="#booking">Termin anfragen</a>
     </nav>
   </header>
 
@@ -34,7 +34,7 @@
           <p class="supporting-line">Wir sprechen über das, was gerade schwer zu ordnen ist: Entscheidungen, Arbeit, Familie, Beziehung, Land, Zukunft, Selbstbild, alte Formen und neue Möglichkeiten. Ziel ist nicht ein schneller Tipp, sondern ein klareres Bild deiner inneren und äusseren Lage — und ein nächster Schritt, der wirklich möglich ist.</p>
           <p class="hero-offer-line">60 Minuten · online · Honorar CHF 120</p>
           <div class="hero-actions" aria-label="Hauptaktionen">
-            <a class="button primary" href="mailto:saschiz@yahoo.de?subject=Termin%20Orientation%20Room">Termin buchen</a>
+            <a class="button primary" href="#booking">Termin anfragen</a>
             <a class="button ghost" href="#offer">Angebot ansehen</a>
           </div>
         </div>
@@ -74,7 +74,7 @@
             <p class="continuation-note">Wenn das Gespräch trägt, kann daraus ein Orientierungsprozess über mehrere Gespräche entstehen.</p>
           </div>
           <aside class="booking-box" aria-label="Buchung Orientation Room">
-            <a class="button primary full" href="mailto:saschiz@yahoo.de?subject=Termin%20Orientation%20Room">Termin buchen</a>
+            <a class="button primary full" href="#booking">Termin anfragen</a>
           </aside>
         </article>
       </div>
@@ -116,10 +116,23 @@
         <p class="eyebrow">Buchung</p>
         <h2>Termin buchen</h2>
         <p>Buche 60 Minuten Orientierungsarbeit. Schreib mir kurz, was dich gerade in den Orientation Room bringt. Danach finden wir einen passenden Termin und du erhältst alle weiteren Informationen.</p>
-        <div class="hero-actions centered-actions">
-          <a class="button primary" href="mailto:saschiz@yahoo.de?subject=Termin%20Orientation%20Room">Termin anfragen</a>
-        </div>
+        <form class="booking-form" action="https://formspree.io/f/mkoljwkv" method="POST">
+          <label for="booking-name">Name</label>
+          <input id="booking-name" name="name" type="text" autocomplete="name" required>
+
+          <label for="booking-email">E-Mail</label>
+          <input id="booking-email" name="email" type="email" autocomplete="email" required>
+
+          <label for="booking-message">Was bringt dich gerade in den Orientation Room?</label>
+          <textarea id="booking-message" name="message" rows="5" required></textarea>
+
+          <label for="booking-areas">Welche Lebensbereiche spielen mit? <span>optional</span></label>
+          <textarea id="booking-areas" name="lebensbereiche" rows="4"></textarea>
+
+          <button class="button primary" type="submit">Anfrage senden</button>
+        </form>
         <p class="question-line">Bei Fragen: <a href="mailto:saschiz@yahoo.de">saschiz@yahoo.de</a></p>
+        <p class="question-line">Oder direkt per E-Mail: <a href="mailto:saschiz@yahoo.de">saschiz@yahoo.de</a></p>
       </div>
     </section>
   </main>
