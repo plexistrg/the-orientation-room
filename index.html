@@ -10,142 +10,238 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://plexistrg.github.io/the-orientation-room/" />
   <link rel="canonical" href="https://plexistrg.github.io/the-orientation-room/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
   <header class="site-header">
     <a class="brand" href="#top" aria-label="The Orientation Room Home">
-      <span class="brand-text">The Orientation Room</span>
+      <span class="brand-mark" aria-hidden="true">OR</span>
+      <span class="brand-copy">
+        <span class="brand-text">The Orientation Room</span>
+        <span class="brand-subline">Orientierungsarbeit · online</span>
+      </span>
     </a>
     <nav class="nav" aria-label="Main Navigation">
       <a href="#sascha">Sascha</a>
       <a href="#room">Worum es geht</a>
       <a href="#offer">Angebot</a>
-      <a class="nav-cta" href="#booking">Termin anfragen</a>
     </nav>
+    <a class="nav-cta" href="#booking">Termin anfragen <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main id="top">
-    <section class="hero section-pad" aria-labelledby="hero-title">
-      <div class="container hero-layout">
+  <main id="main-content">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">The Orientation Room</p>
+          <div class="hero-topline">
+            <p class="eyebrow">The Orientation Room</p>
+            <p class="hero-coordinate" aria-hidden="true">CH ↔ Ausland</p>
+          </div>
           <h1 id="hero-title">Klarheit, wenn vieles gleichzeitig zieht.</h1>
           <p class="lead">60 Minuten Orientierungsarbeit mit Sascha Zimmermann — für Menschen, die nach aussen noch funktionieren, aber innerlich merken, dass ihre bisherige Form nicht mehr trägt.</p>
           <p class="supporting-line">Vielleicht geht es um Arbeit, Beziehung, Familie, Land, Geld, Zukunft, Selbstbild oder eine Entscheidung, die schon zu lange offen ist. Im Orientation Room sprechen wir nicht nur über ein einzelnes Problem. Wir schauen auf die Lage als Ganzes — bis wieder sichtbar wird, was wirklich da ist und welcher Schritt möglich wird.</p>
-          <p class="hero-offer-line">60 Minuten · online · Honorar CHF 120</p>
-          <div class="hero-actions" aria-label="Hauptaktion">
-            <a class="button primary" href="#booking">Termin anfragen</a>
+          <div class="hero-decision">
+            <a class="button primary" href="#booking">Termin anfragen <span aria-hidden="true">↗</span></a>
+            <p class="hero-offer-line">60 Minuten <span>·</span> online <span>·</span> Honorar CHF 120</p>
           </div>
         </div>
+
+        <figure class="hero-portrait">
+          <div class="portrait-architecture" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="sascha-zimmermann.png" alt="Sascha Zimmermann" class="portrait-image" width="1122" height="1402" fetchpriority="high">
+          </div>
+          <figcaption>
+            <span>Sascha Zimmermann</span>
+            <span>Orientierungsarbeit</span>
+          </figcaption>
+          <span class="portrait-index" aria-hidden="true">01 / Gegenüber</span>
+        </figure>
+      </div>
+
+      <div class="field-strip" aria-label="Mögliche Themen im Orientation Room">
+        <span>Arbeit</span>
+        <span>Beziehung</span>
+        <span>Familie</span>
+        <span>Land</span>
+        <span>Geld</span>
+        <span>Zukunft</span>
+        <span>Selbstbild</span>
       </div>
     </section>
 
-    <section id="sascha" class="section section-soft founder-section">
-      <div class="container founder-card">
-        <div class="portrait-wrap">
-          <img src="sascha-zimmermann.png" alt="Sascha Zimmermann" class="portrait-image">
+    <section id="sascha" class="section founder-section" aria-labelledby="sascha-title">
+      <div class="section-shell">
+        <div class="section-rail section-rail-light" aria-hidden="true">
+          <span>01</span>
+          <span>Person</span>
         </div>
-        <div class="person-copy">
-          <p class="eyebrow">Sascha</p>
-          <h2>Sascha Zimmermann</h2>
-          <p>Ich bin in der Schweiz geboren und aufgewachsen, habe viele Jahre Psychologie an der Universität studiert und lebe heute mit meiner Familie ausserhalb der Schweiz.</p>
-          <p>Diese Bewegung zwischen Welten prägt meine Arbeit: Schweiz und Ausland, alte Strukturen und neue Möglichkeiten, persönliche Fragen und grössere Zusammenhänge. Ich kenne die Spannung, wenn mehrere Ebenen gleichzeitig ziehen — Arbeit, Geld, Familie, Körper, Land, Herkunft, Zukunft.</p>
-          <p>Ich arbeite nicht aus einem fertigen Titel heraus, sondern aus einer bestimmten Art zu sehen: durch viele Jahre psychologisches Studium, philosophisches Denken, Sprache, eigene Übergänge und ein Leben zwischen Schweiz und Ausland.</p>
-          <p>Im Orientation Room höre ich zu, frage nach, halte Reibung aus und bringe Sprache in eine Lage, die vorher nur Druck war.</p>
-          <p>Mich interessiert der Moment, in dem eine verfahrene Lage wieder lesbar wird.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="room" class="section section-ink">
-      <div class="container narrow">
-        <p class="eyebrow light">Worum es geht</p>
-        <h2>Worum es geht</h2>
-        <p>Oft liegt das Problem nicht einfach “in dir”. Es liegt in der Lage, in der du stehst.</p>
-        <p>Arbeit, Geld, Familie, Körper, Land, Herkunft, Zukunft, Erwartungen, Selbstbild — diese Dinge wirken nicht getrennt. Sie bilden eine Wirklichkeit, in der man jeden Tag steht. Wenn diese Wirklichkeit unlesbar wird, entsteht Druck: man denkt viel, aber kommt nicht weiter.</p>
-        <p>The Orientation Room ist ein Gesprächsraum für solche Lagen. Keine Therapie, kein klassisches Coaching. Sondern Orientierungsarbeit: eine ruhige, genaue Form des Gesprächs, in der innere und äussere Lage gemeinsam angeschaut werden, bis wieder Klarheit entsteht.</p>
-      </div>
-    </section>
-
-    <section id="offer" class="section section-paper">
-      <div class="container narrow">
-        <p class="eyebrow">Angebot</p>
-        <h2>Angebot</h2>
-        <article class="offer-panel">
-          <header class="offer-header">
-            <h3>Orientation Room</h3>
-            <p>60 Minuten Orientierungsarbeit</p>
-            <p>Honorar: CHF 120</p>
+        <div class="founder-content">
+          <header class="founder-heading">
+            <p class="eyebrow light">Sascha</p>
+            <h2 id="sascha-title">Sascha Zimmermann</h2>
           </header>
-          <div class="offer-prose">
-            <p>60 Minuten Orientierungsarbeit. Ein konzentriertes Gespräch für eine Lage, die sich nicht mit einem schnellen Tipp lösen lässt.</p>
-            <p>Du bringst mit, was gerade Druck macht oder noch keine klare Form gefunden hat: eine Entscheidung, eine Lebensphase, eine Arbeit, die nicht mehr stimmt, ein Leben zwischen Ländern, Familie, Beziehung, Geld, Zukunft, Selbstbild.</p>
-            <p>Wir nehmen die Lage auf, ohne sie zu früh zu vereinfachen. Wir schauen, welche Ebenen zusammenwirken, wo der Druck sitzt und was nicht mehr trägt. Nicht als Methode von aussen, sondern im Gespräch — ruhig, genau, mit einem Gegenüber, das den Faden hält.</p>
-            <p>Ich höre zu. Ich frage nach. Ich sage, was ich sehe. Ich bleibe mit dir bei der Lage, auch dort, wo sie widersprüchlich, unbequem oder noch ohne Sprache ist.</p>
-            <p>Nach dem Gespräch erhältst du eine kurze schriftliche Verdichtung. Darin steht, was sichtbar geworden ist, welche Spannung im Zentrum steht und welcher nächste Schritt real ist.</p>
-            <p>Wenn das Gespräch trägt, kann daraus ein Orientierungsprozess über mehrere Gespräche entstehen.</p>
+          <div class="founder-copy">
+            <div>
+              <p>Ich bin in der Schweiz geboren und aufgewachsen, habe viele Jahre Psychologie an der Universität studiert und lebe heute mit meiner Familie ausserhalb der Schweiz.</p>
+              <p>Diese Bewegung zwischen Welten prägt meine Arbeit: Schweiz und Ausland, alte Strukturen und neue Möglichkeiten, persönliche Fragen und grössere Zusammenhänge. Ich kenne die Spannung, wenn mehrere Ebenen gleichzeitig ziehen — Arbeit, Geld, Familie, Körper, Land, Herkunft, Zukunft.</p>
+            </div>
+            <div>
+              <p>Ich arbeite nicht aus einem fertigen Titel heraus, sondern aus einer bestimmten Art zu sehen: durch viele Jahre psychologisches Studium, philosophisches Denken, Sprache, eigene Übergänge und ein Leben zwischen Schweiz und Ausland.</p>
+              <p>Im Orientation Room höre ich zu, frage nach, halte Reibung aus und bringe Sprache in eine Lage, die vorher nur Druck war.</p>
+              <p class="founder-closing">Mich interessiert der Moment, in dem eine verfahrene Lage wieder lesbar wird.</p>
+            </div>
           </div>
-          <a class="text-link" href="#booking">Termin anfragen</a>
-        </article>
+        </div>
       </div>
     </section>
 
-    <section id="trust" class="section section-paper trust-section">
-      <div class="container narrow">
-        <p class="eyebrow">Rückmeldungen</p>
-        <h2>Was Menschen an Gesprächen mit mir oft schätzen</h2>
-        <p class="trust-intro">Über die Jahre haben mir Menschen immer wieder gesagt, dass Gespräche mit mir ihnen helfen, langsamer zu werden, genauer hinzusehen und Dinge auszusprechen, die vorher nur diffus im Raum standen.</p>
-        <div class="trust-cards" aria-label="Häufig geschätzte Qualitäten in Gesprächen">
-          <article class="trust-card">
-            <h3>Ruhige Präsenz</h3>
-            <p>Ich gehe nicht sofort in Ratschläge. Ich bleibe bei dem, was gesagt wird, bis die Lage klarer wird.</p>
-          </article>
-          <article class="trust-card">
-            <h3>Direktheit ohne Druck</h3>
-            <p>Ich sage, was ich sehe — aber nicht, um dich zu drängen. Sondern damit etwas benennbar wird, das vielleicht schon lange wirkt.</p>
-          </article>
-          <article class="trust-card">
-            <h3>Sinn für Zusammenhänge</h3>
-            <p>Ich schaue nicht nur auf ein einzelnes Problem. Mich interessiert, wie Arbeit, Familie, Körper, Geld, Herkunft, Zukunft und Selbstbild zusammenhängen.</p>
+    <section id="room" class="section room-section" aria-labelledby="room-title">
+      <div class="section-shell">
+        <div class="section-rail" aria-hidden="true">
+          <span>02</span>
+          <span>Feld</span>
+        </div>
+        <div class="room-content">
+          <p class="eyebrow">Worum es geht</p>
+          <h2 id="room-title">Worum es geht</h2>
+          <p class="room-statement">Oft liegt das Problem nicht einfach “in dir”. Es liegt in der Lage, in der du stehst.</p>
+          <div class="room-body">
+            <p>Arbeit, Geld, Familie, Körper, Land, Herkunft, Zukunft, Erwartungen, Selbstbild — diese Dinge wirken nicht getrennt. Sie bilden eine Wirklichkeit, in der man jeden Tag steht. Wenn diese Wirklichkeit unlesbar wird, entsteht Druck: man denkt viel, aber kommt nicht weiter.</p>
+            <p>The Orientation Room ist ein Gesprächsraum für solche Lagen. Keine Therapie, kein klassisches Coaching. Sondern Orientierungsarbeit: eine ruhige, genaue Form des Gesprächs, in der innere und äussere Lage gemeinsam angeschaut werden, bis wieder Klarheit entsteht.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offer" class="section offer-section" aria-labelledby="offer-title">
+      <div class="section-shell">
+        <div class="section-rail section-rail-light" aria-hidden="true">
+          <span>03</span>
+          <span>Angebot</span>
+        </div>
+        <div class="offer-content">
+          <header class="offer-title-row">
+            <div>
+              <p class="eyebrow light">Angebot</p>
+              <h2 id="offer-title">Orientation Room</h2>
+            </div>
+            <div class="offer-meta">
+              <p>60 Minuten Orientierungsarbeit</p>
+              <p>Honorar: CHF 120</p>
+            </div>
+          </header>
+
+          <article class="offer-layout">
+            <aside class="offer-summary">
+              <p>60 Minuten Orientierungsarbeit. Ein konzentriertes Gespräch für eine Lage, die sich nicht mit einem schnellen Tipp lösen lässt.</p>
+              <a class="button light-button" href="#booking">Termin anfragen <span aria-hidden="true">↗</span></a>
+            </aside>
+            <div class="offer-prose">
+              <p>Du bringst mit, was gerade Druck macht oder noch keine klare Form gefunden hat: eine Entscheidung, eine Lebensphase, eine Arbeit, die nicht mehr stimmt, ein Leben zwischen Ländern, Familie, Beziehung, Geld, Zukunft, Selbstbild.</p>
+              <p>Wir nehmen die Lage auf, ohne sie zu früh zu vereinfachen. Wir schauen, welche Ebenen zusammenwirken, wo der Druck sitzt und was nicht mehr trägt. Nicht als Methode von aussen, sondern im Gespräch — ruhig, genau, mit einem Gegenüber, das den Faden hält.</p>
+              <p>Ich höre zu. Ich frage nach. Ich sage, was ich sehe. Ich bleibe mit dir bei der Lage, auch dort, wo sie widersprüchlich, unbequem oder noch ohne Sprache ist.</p>
+              <p>Nach dem Gespräch erhältst du eine kurze schriftliche Verdichtung. Darin steht, was sichtbar geworden ist, welche Spannung im Zentrum steht und welcher nächste Schritt real ist.</p>
+              <p>Wenn das Gespräch trägt, kann daraus ein Orientierungsprozess über mehrere Gespräche entstehen.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="booking" class="section final-cta">
-      <div class="container narrow">
-        <p class="eyebrow">Anfrage</p>
-        <h2>Termin anfragen</h2>
-        <p>Schreib mir kurz, was dich gerade in den Orientation Room bringt.</p>
-        <form class="booking-form" action="https://formspree.io/f/mkoljwkv" method="POST">
-          <label for="booking-name">Name</label>
-          <input id="booking-name" name="name" type="text" autocomplete="name" required>
+    <section id="trust" class="section trust-section" aria-labelledby="trust-title">
+      <div class="section-shell">
+        <div class="section-rail" aria-hidden="true">
+          <span>04</span>
+          <span>Resonanz</span>
+        </div>
+        <div class="trust-content">
+          <div class="trust-heading">
+            <div>
+              <p class="eyebrow">Rückmeldungen</p>
+              <h2 id="trust-title">Was Menschen an Gesprächen mit mir oft schätzen</h2>
+            </div>
+            <p class="trust-intro">Über die Jahre haben mir Menschen immer wieder gesagt, dass Gespräche mit mir ihnen helfen, langsamer zu werden, genauer hinzusehen und Dinge auszusprechen, die vorher nur diffus im Raum standen.</p>
+          </div>
+          <div class="trust-cards" aria-label="Häufig geschätzte Qualitäten in Gesprächen">
+            <article class="trust-card">
+              <span class="card-index">01</span>
+              <h3>Ruhige Präsenz</h3>
+              <p>Ich gehe nicht sofort in Ratschläge. Ich bleibe bei dem, was gesagt wird, bis die Lage klarer wird.</p>
+            </article>
+            <article class="trust-card">
+              <span class="card-index">02</span>
+              <h3>Direktheit ohne Druck</h3>
+              <p>Ich sage, was ich sehe — aber nicht, um dich zu drängen. Sondern damit etwas benennbar wird, das vielleicht schon lange wirkt.</p>
+            </article>
+            <article class="trust-card">
+              <span class="card-index">03</span>
+              <h3>Sinn für Zusammenhänge</h3>
+              <p>Ich schaue nicht nur auf ein einzelnes Problem. Mich interessiert, wie Arbeit, Familie, Körper, Geld, Herkunft, Zukunft und Selbstbild zusammenhängen.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <label for="booking-email">E-Mail</label>
-          <input id="booking-email" name="email" type="email" autocomplete="email" required>
+    <section id="booking" class="section booking-section" aria-labelledby="booking-title">
+      <div class="booking-shell">
+        <div class="booking-intro">
+          <p class="eyebrow light">Anfrage</p>
+          <h2 id="booking-title">Termin anfragen</h2>
+          <p>Schreib mir kurz, was dich gerade in den Orientation Room bringt.</p>
+          <div class="booking-marker" aria-hidden="true">
+            <span>60 Min.</span>
+            <span>Online</span>
+            <span>CHF 120</span>
+          </div>
+        </div>
 
-          <label for="booking-message">Was bringt dich gerade in den Orientation Room?</label>
-          <textarea id="booking-message" name="message" rows="5" required></textarea>
+        <div class="form-panel">
+          <form class="booking-form" action="https://formspree.io/f/mkoljwkv" method="POST">
+            <div class="form-row">
+              <div class="field-group">
+                <label for="booking-name">Name</label>
+                <input id="booking-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field-group">
+                <label for="booking-email">E-Mail</label>
+                <input id="booking-email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
 
-          <label for="booking-areas">Welche Lebensbereiche spielen mit? <span>optional</span></label>
-          <textarea id="booking-areas" name="lebensbereiche" rows="4"></textarea>
+            <div class="field-group">
+              <label for="booking-message">Was bringt dich gerade in den Orientation Room?</label>
+              <textarea id="booking-message" name="message" rows="5" required></textarea>
+            </div>
 
-          <label class="consent-check">
-            <input type="checkbox" name="privacy_consent" required>
-            Ich habe den Datenschutzhinweis gelesen und bin mit der Übermittlung meiner Angaben über Formspree einverstanden.
-          </label>
+            <div class="field-group">
+              <label for="booking-areas">Welche Lebensbereiche spielen mit? <span>optional</span></label>
+              <textarea id="booking-areas" name="lebensbereiche" rows="4"></textarea>
+            </div>
 
-          <button class="button primary" type="submit">Anfrage senden</button>
-        </form>
-        <p class="privacy-notice">Datenschutzhinweis: Deine Angaben werden über Formspree übermittelt und ausschliesslich zur Bearbeitung deiner Anfrage verwendet. Weitere Informationen findest du in der <a href="https://formspree.io/legal/privacy-policy/">Datenschutzerklärung von Formspree</a>.</p>
+            <label class="consent-check">
+              <input type="checkbox" name="privacy_consent" required>
+              <span>Ich habe den Datenschutzhinweis gelesen und bin mit der Übermittlung meiner Angaben über Formspree einverstanden.</span>
+            </label>
+
+            <button class="button primary form-submit" type="submit">Anfrage senden <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="privacy-notice">Datenschutzhinweis: Deine Angaben werden über Formspree übermittelt und ausschliesslich zur Bearbeitung deiner Anfrage verwendet. Weitere Informationen findest du in der <a href="https://formspree.io/legal/privacy-policy/">Datenschutzerklärung von Formspree</a>.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
+      <a class="footer-brand" href="#top">The Orientation Room</a>
       <p class="legal-note">Hinweis: The Orientation Room bietet Orientierungsarbeit, Psychoedukation und strukturierende Reflexion. Es ersetzt keine Psychotherapie, medizinische Behandlung, Diagnose oder Krisenhilfe.</p>
+      <a class="footer-top" href="#top">Nach oben ↑</a>
     </div>
   </footer>
 </body>
