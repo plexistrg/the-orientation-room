@@ -12,7 +12,10 @@
   <link rel="canonical" href="https://plexistrg.github.io/the-orientation-room/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="theme-color" content="#172932" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
@@ -25,7 +28,8 @@
         <span class="brand-subline">Orientierungsarbeit · online</span>
       </span>
     </a>
-    <nav class="nav" aria-label="Main Navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Navigation öffnen" hidden><span></span><span></span></button>
+    <nav id="site-navigation" class="nav" aria-label="Hauptnavigation">
       <a href="#sascha">Sascha</a>
       <a href="#room">Worum es geht</a>
       <a href="#offer">Angebot</a>
@@ -41,7 +45,7 @@
             <p class="eyebrow">The Orientation Room</p>
             <p class="hero-coordinate" aria-hidden="true">CH ↔ Ausland</p>
           </div>
-          <h1 id="hero-title">Klarheit, wenn vieles gleichzeitig zieht.</h1>
+          <h1 id="hero-title">Klarheit, wenn vieles <em>gleichzeitig zieht.</em></h1>
           <p class="lead">60 Minuten Orientierungsarbeit mit Sascha Zimmermann — für Menschen, die nach aussen noch funktionieren, aber innerlich merken, dass ihre bisherige Form nicht mehr trägt.</p>
           <p class="supporting-line">Vielleicht geht es um Arbeit, Beziehung, Familie, Land, Geld, Zukunft, Selbstbild oder eine Entscheidung, die schon zu lange offen ist. Im Orientation Room sprechen wir nicht nur über ein einzelnes Problem. Wir schauen auf die Lage als Ganzes — bis wieder sichtbar wird, was wirklich da ist und welcher Schritt möglich wird.</p>
           <div class="hero-decision">
@@ -51,9 +55,8 @@
         </div>
 
         <figure class="hero-portrait">
-          <div class="portrait-architecture" aria-hidden="true"></div>
           <div class="portrait-frame">
-            <img src="sascha-zimmermann.png" alt="Sascha Zimmermann" class="portrait-image" width="1122" height="1402" fetchpriority="high">
+            <img src="sascha-zimmermann.png" alt="Sascha Zimmermann" class="portrait-image" width="1122" height="1402" fetchpriority="high" decoding="async">
           </div>
           <figcaption>
             <span>Sascha Zimmermann</span>
@@ -93,9 +96,9 @@
             <div>
               <p>Ich arbeite nicht aus einem fertigen Titel heraus, sondern aus einer bestimmten Art zu sehen: durch viele Jahre psychologisches Studium, philosophisches Denken, Sprache, eigene Übergänge und ein Leben zwischen Schweiz und Ausland.</p>
               <p>Im Orientation Room höre ich zu, frage nach, halte Reibung aus und bringe Sprache in eine Lage, die vorher nur Druck war.</p>
-              <p class="founder-closing">Mich interessiert der Moment, in dem eine verfahrene Lage wieder lesbar wird.</p>
             </div>
           </div>
+          <p class="founder-closing">Mich interessiert der Moment, in dem eine verfahrene Lage wieder lesbar wird.</p>
         </div>
       </div>
     </section>
@@ -203,6 +206,7 @@
 
         <div class="form-panel">
           <form class="booking-form" action="https://formspree.io/f/mkoljwkv" method="POST">
+            <input type="hidden" name="_next" value="https://plexistrg.github.io/the-orientation-room/thank-you.html">
             <div class="form-row">
               <div class="field-group">
                 <label for="booking-name">Name</label>
@@ -216,7 +220,7 @@
 
             <div class="field-group">
               <label for="booking-message">Was bringt dich gerade in den Orientation Room?</label>
-              <textarea id="booking-message" name="message" rows="5" required></textarea>
+              <textarea id="booking-message" name="message" rows="5" aria-describedby="booking-privacy" required></textarea>
             </div>
 
             <div class="field-group">
@@ -230,8 +234,9 @@
             </label>
 
             <button class="button primary form-submit" type="submit">Anfrage senden <span aria-hidden="true">↗</span></button>
+            <p class="form-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
           </form>
-          <p class="privacy-notice">Datenschutzhinweis: Deine Angaben werden über Formspree übermittelt und ausschliesslich zur Bearbeitung deiner Anfrage verwendet. Weitere Informationen findest du in der <a href="https://formspree.io/legal/privacy-policy/">Datenschutzerklärung von Formspree</a>.</p>
+          <p id="booking-privacy" class="privacy-notice">Datenschutzhinweis: Deine Angaben werden über Formspree übermittelt und ausschliesslich zur Bearbeitung deiner Anfrage verwendet. Weitere Informationen findest du in der <a href="https://formspree.io/legal/privacy-policy/">Datenschutzerklärung von Formspree</a>.</p>
         </div>
       </div>
     </section>
